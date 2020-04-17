@@ -1,0 +1,34 @@
+{
+	"name": "myfooter",
+	"version": "0.0.4",
+	"description": "A pretty footer",
+	"main": "dist/index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "rm -rf ./dist && tsc",
+		"prepare": "yarn build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/suzynakayama/2020-04-17-personal-npm-package.git"
+	},
+	"author": "Suzy Nakayama",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/suzynakayama/2020-04-17-personal-npm-package/issues"
+	},
+	"homepage": "https://github.com/suzynakayama/2020-04-17-personal-npm-package#readme",
+	"devDependencies": {
+		"@types/react": "^16.9.34",
+		"@types/react-dom": "^16.9.6",
+		"css-loader": "^3.5.2",
+		"file-loader": "^6.0.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"source-map-loader": "^0.2.4",
+		"ts-loader": "^7.0.0",
+		"typescript": "^3.8.3",
+		"webpack": "^4.42.1",
+		"webpack-cli": "^3.3.11"
+	}
+}

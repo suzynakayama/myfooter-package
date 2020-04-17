@@ -1,18 +1,27 @@
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+
 module.exports = {
 	mode: "production",
 
 	// Enable sourcemaps for debugging webpack's output.
 	devtool: "source-map",
+	entry: "./src/index.ts",
+	output: {
+		path: path.resolve(__dirname, "dist"),
+		filename: "index.[contentHash].js",
+		libraryTarget: "commonjs2",
+	},
 
 	resolve: {
 		// Add '.ts' and '.tsx' as resolvable extensions.
-		extensions: [".ts", ".tsx"],
+		extensions: [".ts", ".tsx", ".js"],
 	},
 
 	module: {
 		rules: [
 			{
-				test: /\.ts(x?)$/,
+				test: /\.ts$/,
 				exclude: /node_modules/,
 				use: [
 					{
@@ -20,23 +29,42 @@ module.exports = {
 					},
 				],
 			},
-			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
+			{
+				test: /\.tsx$/,
+				exclude: /node_modules/,
+				use: [
+					{
+						loader: "babel-loader!ts-loader",
+					},
+				],
+			},
 			{
 				enforce: "pre",
 				test: /\.js$/,
-				loader: "source-map-loader",
+				loader: "babel-loader",
 			},
-			{ test: /\.css$/, use: "css-loader" },
+			{ test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
+			// "style-loader"
 			{
 				test: /\.(png|jpe?g|gif)$/i,
 				use: [
 					{
 						loader: "file-loader",
+						options: {
+							name: "[name].[ext]",
+							outputPath: "assets",
+						},
 					},
 				],
 			},
 		],
 	},
+
+	plugins: [
+		new MiniCssExtractPlugin({
+			filename: "[name].css",
+		}),
+	],
 
 	// When importing a module whose path matches one of the following, just
 	// assume a corresponding global variable exists and use that instead.

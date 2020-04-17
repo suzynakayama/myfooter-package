@@ -15,7 +15,7 @@ const Footer = (github: string, name: string) => {
 				>
 					<span className="footer-span">Developed by</span>
 					&nbsp;{name}&nbsp;
-					<img className="github" src="./github.png" alt="github icon" />
+					<img className="github" src="./assets/github.png" alt="github icon" />
 				</a>
 				<span className="footer-span left">All Rights Reserved &reg;</span>
 			</p>

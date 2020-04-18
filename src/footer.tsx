@@ -1,7 +1,5 @@
 import * as React from "react";
 import "./footer.css";
-// @ts-ignore
-import github from "./github.png";
 
 const Footer = (github: string, name: string) => {
 	return (

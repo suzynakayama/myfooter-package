@@ -1,6 +1,5 @@
 webpack.local.config.js
-    webpack.production.config.js
-    .eslintrc
+    webpack.config.js
     .gitignore
     .babelrc
     /src

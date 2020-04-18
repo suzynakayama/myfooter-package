@@ -2,10 +2,10 @@ const path = require("path");
 
 module.exports = {
 	mode: "production",
-	entry: "./src/index.ts",
+	entry: "./src/footer.tsx",
 	output: {
 		path: path.resolve(__dirname, "build"),
-		filename: "index.js",
+		filename: "footer.js",
 		libraryTarget: "commonjs2",
 	},
 	resolve: {

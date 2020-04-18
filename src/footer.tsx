@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.css";
 
-export interface Props {
+interface Props {
 	github: string;
 	name: string;
 }
@@ -18,9 +18,13 @@ const Footer = (props: Props) => {
 				>
 					<span className="footer-span">Developed by</span>
 					&nbsp;{props.name}&nbsp;
-					<img className="github" src="./assets/github.png" alt="github icon" />
+					<img
+						className="github"
+						src="https://i.imgur.com/4TlWcym.png"
+						alt="github icon"
+					/>
 				</a>
-				<span className="footer-span left">All Rights Reserved &reg;</span>
+				<span className="footer-span right">All Rights Reserved &reg;</span>
 			</p>
 		</footer>
 	);

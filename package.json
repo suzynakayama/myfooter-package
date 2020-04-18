@@ -1,8 +1,8 @@
 {
 	"name": "react-myfooter",
-	"version": "1.1.0",
+	"version": "2.0.0",
 	"description": "A pretty footer",
-	"main": "./build/index.js",
+	"main": "./build/footer.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack",

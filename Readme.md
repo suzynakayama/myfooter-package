@@ -1,7 +1,5 @@
 # My Footer
 
-**\*\*\*** NOT WORKING YET **\*\*\***
-
 It's a simple footer component that can be used with your projects!
 
 [NPM site here](https://www.npmjs.com/package/myfooter)
@@ -10,11 +8,11 @@ It's a simple footer component that can be used with your projects!
 
 1. Install:
 
-`npm install myfooter`
+`npm install react-myfooter`
 
 2. Import:
 
-`import Footer from 'myfooter';`
+`import Footer from 'react-myfooter';`
 
 3. Use, passing your github page and your name:
 

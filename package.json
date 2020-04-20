@@ -1,6 +1,6 @@
 {
 	"name": "react-myfooter",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"description": "A pretty footer",
 	"main": "./build/footer.js",
 	"scripts": {

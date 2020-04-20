@@ -19,3 +19,5 @@ It's a simple footer component that can be used with your projects!
 `<Footer github="<your github page>" name="<your name>" />`
 
 4. Enjoy!
+
+![image](https://i.imgur.com/BWjRTNB.png)

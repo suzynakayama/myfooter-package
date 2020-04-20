@@ -1,23 +1,30 @@
 {
 	"name": "react-myfooter",
-	"version": "2.0.2",
-	"description": "A pretty footer",
+	"version": "2.0.4",
+	"description": "A pretty react/typescript footer",
 	"main": "./build/footer.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"build": "webpack",
 		"prepare": "npm run build"
 	},
+	"keywords": [
+		"react",
+		"footer",
+		"component",
+		"react footer",
+		"footer component"
+	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/suzynakayama/2020-04-17-personal-npm-package.git"
+		"url": "git+https://github.com/suzynakayama/myfooter-package.git"
 	},
 	"author": "Suzy Nakayama",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/suzynakayama/2020-04-17-personal-npm-package/issues"
+		"url": "https://github.com/suzynakayama/myfooter-package/issues"
 	},
-	"homepage": "https://github.com/suzynakayama/2020-04-17-personal-npm-package#readme",
+	"homepage": "https://github.com/suzynakayama/myfooter-package#readme",
 	"devDependencies": {
 		"@babel/core": "^7.9.0",
 		"@babel/preset-env": "^7.9.5",

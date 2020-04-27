@@ -2,7 +2,7 @@
 
 It's a simple footer component that can be used with your projects!
 
-[NPM site here](https://www.npmjs.com/package/myfooter)
+[NPM site here](https://www.npmjs.com/package/react-myfooter)
 
 ### How to Use
 

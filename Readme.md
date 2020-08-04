@@ -18,6 +18,15 @@ It's a simple footer component that can be used with your projects!
 
 `<Footer github="<your github page>" name="<your name>" />`
 
-4. Enjoy!
+4. Note, the footer is set to `position: absolute;` and `bottom: 0;`. You can change on your CSS by adding:
+
+```css
+    footer {
+      position: relative !important; 
+      .....
+    }
+```
+
+5. Enjoy!
 
 ![image](https://i.imgur.com/BWjRTNB.png)

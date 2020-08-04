@@ -6,18 +6,18 @@ interface Props {
 	name: string;
 }
 
-const Footer = (props: Props) => {
+const Footer: React.FC<Props> = ({github, name}) => {
 	return (
 		<footer className="footer">
 			<p className="footer-p">
 				<a
-					href={props.github}
+					href={github}
 					className="footer-a"
 					target="_blank"
 					rel="noreferrer noopener"
 				>
 					<span className="footer-span">Developed by</span>
-					&nbsp;{props.name}&nbsp;
+					&nbsp;{name}&nbsp;
 					<img
 						className="github"
 						src="https://i.imgur.com/4TlWcym.png"

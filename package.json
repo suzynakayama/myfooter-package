@@ -36,17 +36,17 @@
 		"babel-loader": "^8.1.0",
 		"babel-plugin-transform-object-rest-spread": "^6.26.0",
 		"babel-plugin-transform-react-jsx": "^6.24.1",
-		"css-loader": "^3.6.0",
+		"css-loader": "^6.7.3",
 		"file-loader": "^6.0.0",
 		"path": "^0.12.7",
 		"react-dom": "^16.13.1",
-		"source-map-loader": "^0.2.4",
+		"source-map-loader": "^4.0.1",
 		"style-loader": "^1.2.1",
 		"typescript": "^3.9.7",
-		"webpack-cli": "^3.3.12"
+		"webpack-cli": "^5.0.1"
 	},
 	"dependencies": {
 		"react": "^16.13.1",
-		"webpack": "^4.44.1"
+		"webpack": "^5.75.0"
 	}
 }
